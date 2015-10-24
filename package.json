@@ -1,0 +1,24 @@
+{
+  "name": "angularanimation",
+  "version": "1.0.0",
+  "description": "angular app that has good animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progamr/animation.git"
+  },
+  "keywords": [
+    "angualr",
+    "animation",
+    "js"
+  ],
+  "author": "Amr Mohamed <prog.amr2014@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progamr/animation/issues"
+  },
+  "homepage": "https://github.com/progamr/animation#readme"
+}
