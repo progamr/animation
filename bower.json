@@ -1,0 +1,32 @@
+{
+  "name": "angularanimation",
+  "description": "angular app that has good animations",
+  "main": "index.js",
+  "authors": [
+    "Amr Mohamed <prog.amr2014@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angualr",
+    "animation",
+    "js"
+  ],
+  "homepage": "https://github.com/progamr/animation",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.14.3",
+    "angular-loader": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7"
+  }
+}
