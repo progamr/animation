@@ -1,0 +1,18 @@
+/* Animations */
+#animateMainWrapper.open-add {
+    transition: padding 650ms ease-out;
+}
+
+#animateMainWrapper.open-add-active,
+#animateMainWrapper.open {
+    padding-left: 250px;
+}
+
+#animateMainWrapper.open-add #sidebar-wrapper {
+    transition: left 650ms ease-out;
+}
+
+#animateMainWrapper.open-add-active #sidebar-wrapper,
+#animateMainWrapper.open #sidebar-wrapper {
+    left: 150px;
+}

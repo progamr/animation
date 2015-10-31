@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="animations">
+<head>
+    <meta charset="UTF-8">
+    <title>angular animations</title>
+</head>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animations.css">
+<body>
+
+<div id="animateMainWrapper" ng-controller="mainController as model" ng-class="{'open' : model.toggle, 'container-fluid' : 1}"  ng-cloak>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar">
+            <li class="sidebar-main">
+                <a ng-click="model.toggleSidebar()">
+                    Dashboard
+                    <span class="menu-icon glyphicon glyphicon-transfer"></span>
+                </a>
+            </li>
+            <li class="sidebar-title"><span>NAVIGATION</span></li>
+            <li class="sidebar-list">
+                <a href="#/dashboard">Dashboard <span class="menu-icon fa fa-tachometer"></span></a>
+            </li>
+            <li class="sidebar-list">
+                <a href="#/notifications">Notifications <span class="menu-icon fa fa-bell"></span></a>
+            </li>
+            <li class="sidebar-list">
+                <a href="#/preferences">Preferences <span class="menu-icon fa fa-cog"></span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/controllers/mainController.js"></script>
+</body>
+</html>
