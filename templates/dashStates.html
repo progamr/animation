@@ -1,0 +1,18 @@
+<div ng-controller="statesController as model">
+<div class="row title-bar col-xs-12 clearfix" ng-controller="statesController as model">
+    <h2 class="title-nar-title pull-left" ng-click="model.changeOrder()">Favorite Charities</h2>
+    <div class="title-bar-search pull-right">
+        <input type="text" placeholder="Search" class="form-control input-med" ng-model="search.name">
+    </div>
+</div>
+<div ng-repeat="charity in model.charities | filter:search | orderBy:model.predicate" class="charity col-xs-12">
+    <rd-widget>
+        <rd-widget-body>
+            <div class="charity-icon widget-icon {{charity.color}}">
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="charity-name title">{{charity.name}}</div>
+        </rd-widget-body>
+    </rd-widget>
+</div>
+</div>

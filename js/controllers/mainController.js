@@ -1,6 +1,6 @@
 (function (module) {
 
-    var mainController = function ($scope) {
+    var mainController = function () {
 
         var model = this;
         model.toggle = true;

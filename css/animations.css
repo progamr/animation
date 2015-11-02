@@ -1,6 +1,6 @@
 /* Animations */
-#animateMainWrapper.open-add {
-    transition: padding 650ms ease-out;
+#animateMainWrapper.open-add , .open-remove{
+    transition: padding 400ms ease-out;
 }
 
 #animateMainWrapper.open-add-active,
@@ -8,11 +8,30 @@
     padding-left: 250px;
 }
 
-#animateMainWrapper.open-add #sidebar-wrapper {
-    transition: left 650ms ease-out;
+#animateMainWrapper.open-add #sidebar-wrapper ,
+#animateMainWrapper.open-remove #sidebar-wrapper {
+    transition: left 400ms ease-out;
 }
 
 #animateMainWrapper.open-add-active #sidebar-wrapper,
 #animateMainWrapper.open #sidebar-wrapper {
     left: 150px;
 }
+ng-include.ng-enter, [ng-include].ng-enter, ng-view.ng-enter, [ng-view].ng-enter{
+    opacity: 0;
+    transition: opacity 1s;
+}
+ng-include.ng-enter-active, [ng-include].ng-enter-active, ng-view.ng-enter-active, [ng-view].ng-enter-active{
+    opacity: 1;
+}
+/*ng-switch*/
+.myClass.ng-enter, .myClass.ng-leave{
+    /*set the animation*/
+}
+.myClass.ng-enter, .myClass.ng-leave-active{
+    /*trigger the animation*/
+}
+.myClass.ng-enter-active{
+    /*trigger the animation*/
+}
+
